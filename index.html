@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Appearance Editor</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <!-- List -->
+        <div class="col-md-6">
+            <h2>Color Names</h2>
+            <ul id="itemList" class="list-group">
+                <li class="list-group-item">Red</li>
+                <li class="list-group-item">Blue</li>
+                <li class="list-group-item">Green</li>
+                <li class="list-group-item">grey</li>
+                <li class="list-group-item">black</li>
+            </ul>
+        </div>
+        <!-- Preferences Panel -->
+        <div class="col-md-6">
+            <h2>Preferences</h2>
+            <div class="form-group">
+                <label for="colorPicker">Background Color:</label>
+                <input type="color" id="colorPicker" class="form-control color-picker">
+            </div>
+            <div class="form-group">
+                <label for="fontSize">Font Size:</label>
+                <input type="range" id="fontSize" class="form-control-range" min="10" max="30" step="1" value="16">
+            </div>
+            <div class="form-group">
+                <label for="fontFamily">Font Family:</label>
+                <select id="fontFamily" class="form-control">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="Georgia, serif">Georgia</option>
+                    <option value="Times New Roman, serif">Times New Roman</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="theme">Theme:</label>
+                <select id="theme" class="form-control">
+                    <option value="yellow">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="grye">Grey</option>
+                   
+                </select>
+            </div>
+            <button id="saveButton" class="btn btn-primary">Save Preferences</button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 90%; /* Set maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.color-picker {
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 750px; /* Optimize layout for tablets */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 970px; /* Optimize layout for small desktops */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px; /* Optimize layout for large desktops */
+    }
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
